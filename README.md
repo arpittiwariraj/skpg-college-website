@@ -1,20 +1,20 @@
 # Sarvodaya Kisan Post Graduate College
 
-Sarvodaya Kisan Post Graduate College (Koari Ram, Gorakhpur) is an institution serving students from Post Graduate level, with admissions, courses and campus information.
+A college site for the Sarvodaya Kisan Post Graduate College campus. The homepage leans on an admissions notice and an overview of courses and facilities.
 
 ## Live Demo
 
-Not deployed publicly. Run locally with:
+Not deployed publicly. Start locally:
 
 ```bash
-python3 -m http.server <port> --directory .
+cd skpg-college-website
+python3 -m http.server 8104 --directory .
+# open http://localhost:8104/
 ```
-
-See [Installation and Setup](#installation-and-setup).
 
 ## Screenshots
 
-Real captured screenshots of the running site (desktop 1440x900, mobile 390x844). Relative paths — file names include the project slug so every repository is unique:
+The site shown below was running during capture. Relative paths, file names carry the project slug:
 
 | Desktop | Mobile |
 |---|---|
@@ -22,66 +22,65 @@ Real captured screenshots of the running site (desktop 1440x900, mobile 390x844)
 
 ## About the Project
 
-Sarvodaya Kisan Post Graduate College (Koari Ram, Gorakhpur) is an institution serving students from Post Graduate level, with admissions, courses and campus information.
+Sarvodaya Kisan Post Graduate College is a postgraduate college at Koari Ram, Gorakhpur. The site carries admissions, courses, facilities and faculty information.
 
 ## Key Features
 
- - Homepage with college overview and admissions notice
- - About, Admissions, Courses, Facilities, Faculty, Gallery pages
- - Admission information and course listings
- - Contact page and college imagery
 
+ - Homepage with a college overview and admissions notice
+ - Admissions, Courses, Facilities, Faculty, Gallery pages
+ - Contact page with general enquiry route
 
 ## Technology Stack
 
-HTML, CSS, JavaScript; static site
+
+HTML, CSS, JavaScript; plain static site
 
 ## Project Structure
 
- - `.`
- - `images`
- - `images/gallery`
- - `screenshots/desktop`
- - `screenshots/mobile`
 
+ - index, about, admissions, courses, facilities, faculty, gallery, contact + css, js, images, events.json, notices.json
 
 ## Installation and Setup
 
-python3 -m http.server 8104
 
 ```bash
+
 cd skpg-college-website
-python3 -m http.server <port>
-# open http://localhost:<port>
+
+python3 -m http.server 8104 --directory .
+
+# open http://localhost:8104/
+
 ```
 
-## Environment Configuration
-
-No environment variables are required for this static site. There are no `.env` files or secrets in the project.
 
 ## My Contribution
 
-The original website was authored by its owner (as identified in the source), not by me. I prepared this repository for professional GitHub publication: I verified the source files, captured real screenshots, and generated the documentation. I did not rewrite the site's functionality or design.
+
+The college site was put together by the owner, who still holds the source. I prepared this repository: copied the files over, checked them, and added the screenshots and setup notes. The originals were left untouched.
 
 ## Responsive Design
 
-Pages verified at 1440x900 (desktop) and 390x844 (mobile).
+
+Homepage and inner pages were captured at 1440x900 (desktop) and 390x844 (mobile) earlier this session.
 
 ## Security and Privacy
 
-Security audit performed during preparation. No API keys, tokens, private keys, database credentials, or SMTP credentials were found. Personal contact information present in the site (phone numbers, emails) is displayed on the live site and should not be republished beyond the repository.
+
+No API keys, tokens, private keys, database credentials, or SMTP credentials were found anywhere in the repository. Public contact details that sit on the live site belong to the organisation or its people and are not something to republish beyond the repo.
 
 ## Known Limitations
 
-- The site is a static site and is not deployed online; it must be served locally.
-- Some pages reference local assets and third-party fonts/CDN resources.
+
+- The site is a static site and is not deployed online; it is served here for review.
 
 ## Future Improvements
 
-- Deploy the site to a public host and add a real Live Demo link.
-- Add a managed content backend (CMS) if content changes frequently.
-- Optimise large images for faster page load.
+
+- Serve the site from a public host and swap in a live demo link when one becomes available.
 
 ## License
 
-No license is present in the source code. The source code is therefore **not licensed for reuse**. Contact the project owner before reuse.
+
+No license was found in the source, so the code is not offered for reuse. Speak to the project owner before reusing it.
